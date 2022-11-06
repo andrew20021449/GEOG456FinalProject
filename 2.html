@@ -35,8 +35,8 @@ Papa.parse(fileUrl, {
 
     </div>
     <script>
-    var y = Ridership.map(e => Number(e.UZAName))
-    var x = ['April 2020','May 2020', 'June 2020', 'July 2020', 'August 2020', 'September 2020', 'October 2020', 'November 2020', 'December 2020', 'January 2021', 'February 2021', 'March 2021', 'April 2021', 'May 2021', 'June 2021', 'July 2021', 'August 2021', 'September 2021', 'October 2021', 'November 2021', 'December 2021', 'January 2022', 'February 2022', 'March 2022', 'April 2022', 'May 2022', 'June 2022', 'July 2022']
+    var y = Ridership.map(e => Number(e.Apr20))
+    var x = Ridership.map(e => Number(e.UZAName))
     var trace1 = {
 x: x,
 y: y,
@@ -68,3 +68,4 @@ var data = [trace1];
 Plotly.newPlot('myDiv', data, layout);
     </script>
 </html>
+// ['April 2020','May 2020', 'June 2020', 'July 2020', 'August 2020', 'September 2020', 'October 2020', 'November 2020', 'December 2020', 'January 2021', 'February 2021', 'March 2021', 'April 2021', 'May 2021', 'June 2021', 'July 2021', 'August 2021', 'September 2021', 'October 2021', 'November 2021', 'December 2021', 'January 2022', 'February 2022', 'March 2022', 'April 2022', 'May 2022', 'June 2022', 'July 2022']
